@@ -5,10 +5,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="menu__wrapper">
-        <div className="menu__bar">
+        <div className="menu__bar--title-container">
           <a href="#" title="Home" aria-label="home" className="logo">
             <img src={logo} alt="logo" />
+            <h1 className="menu__bar-title">Denovann</h1>
           </a>
+        </div>
+        <div className="menu__bar">
           <nav>
             <ul className="navigation hide">
               <li>
@@ -86,11 +89,6 @@ const Header = () => {
               <li>
                 <a href="#docs" title="Docs">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="#blog" title="Blog">
-                  Blog
                 </a>
               </li>
             </ul>
