@@ -1,14 +1,14 @@
 import './Header.scss';
 import logo from '../../assets/logo.jpg';
 
-const Header = () => {
+const Header = ({ toggleMenu, isModalOpen }) => {
   return (
     <header className="header">
       <div className="menu__wrapper">
         <div className="menu__bar--title-container">
           <a href="#" title="Home" aria-label="home" className="logo">
             <img src={logo} alt="logo" />
-            <h1 className="menu__bar-title">Denovann</h1>
+            <h1 className="menu__bar-title">Denovann Belloir</h1>
           </a>
         </div>
         <div className="menu__bar">
@@ -83,7 +83,7 @@ const Header = () => {
               </li>
               <li>
                 <a href="#pricing" title="Pricing">
-                  Hard skills
+                  Compétences
                 </a>
               </li>
               <li>
@@ -94,24 +94,48 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <button aria-label="Open menu" className="burger-menu" type="button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-menu-2"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 6l16 0" />
-            <path d="M4 12l16 0" />
-            <path d="M4 18l16 0" />
-          </svg>
+        <button
+          aria-label="Open menu"
+          className="burger-menu"
+          type="button"
+          onClick={toggleMenu}
+        >
+          {isModalOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="icon icon-tabler icons-tabler-outline icon-tabler-x"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-menu-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          )}
         </button>
       </div>
     </header>
