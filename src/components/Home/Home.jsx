@@ -9,19 +9,20 @@ const Home = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        '<span style="color: yellow;">JavaScript</span>',
-        'PHP',
-        'Symfony',
-        'MySQL',
-        'React',
-        'Redux',
-        'Linux',
-        'CSS & SCSS',
-        'Github',
-        'API',
-        'POO',
-        'Wordpress',
-        "Ouvert à d'autres langages !",
+        '<span style="background-color: #F0DB4F; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">JavaScript</span>', // Badge jaune avec texte noir
+        '<span style="background-color: #8892BF; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">PHP</span>', // Badge bleu avec texte blanc
+        '<span style="background-color: #4F5B93; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Symfony</span>', // Badge bleu foncé avec texte blanc
+        '<span style="background-color: #4479A1; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">MySQL</span>', // Badge bleu clair avec texte blanc
+        '<span style="background-color: #61DBFB; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">React</span>', // Badge bleu clair avec texte noir
+        '<span style="background-color: #764ABC; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Redux</span>', // Badge violet avec texte blanc
+        '<span style="background-color: #FCC624; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Linux</span>', // Badge jaune avec texte noir
+        '<span style="background-color: #2965F1; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">CSS</span>',
+        '<span style="background-color: #CC6699; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">SASS</span>', // Badge bleu avec texte blanc
+        '<span style="background-color: #181717; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Github</span>', // Badge noir avec texte blanc
+        '<span style="background-color: #E34F26; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">API</span>', // Badge orange avec texte blanc
+        '<span style="background-color: #5C2D91; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">POO</span>', // Badge violet avec texte blanc
+        '<span style="background-color: #21759B; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Wordpress</span>', // Badge bleu avec texte blanc
+        '<span style="color: #FF5733; font-weight: bold;">Ouvert à d\'autres langages !</span>',
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -37,21 +38,25 @@ const Home = () => {
   return (
     <section className="main-section">
       <div className="home-content">
-        <h3>Bonjour, moi c'est</h3>
+        <h3>Bonjour, moi c&apos;est</h3>
         <h1>Denovann Belloir</h1>
         <h3>
           Et je suis <span className="gradient-text">développeur web</span> !
         </h3>
         <p>
-          Issu d'une reconversion, je suis prêt à mettre mes compétences à votre
-          disposition !
+          Issu d&apos;une reconversion, je suis prêt à mettre mes compétences à
+          votre disposition !
         </p>
         <p>
           <span ref={el} />
         </p>
         <div className="home-content--btns">
-          <a href="ICI PDF">Techarger mon CV</a>
-          <a href="FORMULAIRE CONTACT">Contactez-moi</a>
+          <a href="LIEN-CV" className="btn-link">
+            Télécharger mon CV
+          </a>
+          <a href="FORMULAIRE-CONTACT" className="btn-link">
+            Contactez-moi
+          </a>
         </div>
       </div>
       <div className="home-profil">
