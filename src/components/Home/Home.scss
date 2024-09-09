@@ -20,13 +20,19 @@
       cursor: pointer !important;
       background-color: white;
       color: #bf4f74;
-      border: 2px solid #bf4f74;
       padding: 0.5em 1.5em;
       border-radius: 5px;
       font-size: 1em;
       text-decoration: none;
       text-align: center;
       transition: background-color 0.3s ease, color 0.3s ease;
+
+      /* Créer une bordure avec un dégradé */
+      border: 2px solid transparent; /* Bordure transparente initiale */
+      background-image: linear-gradient(white, white),
+        linear-gradient(90deg, #ff8a00, #e52e71); /* Deux couches : une pour le fond blanc, l'autre pour le dégradé */
+      background-origin: border-box; /* Le fond commence à la bordure */
+      background-clip: padding-box, border-box; /* Le fond blanc reste dans le bouton, le dégradé est sur la bordure */
 
       &:hover {
         background-color: #bf4f74;
@@ -65,8 +71,8 @@
       width: 20vw;
       border-radius: 50%;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15),
-        /* Ombre légère de base */ 0 0 10px 5px rgba(255, 138, 0, 0.4),
-        /* Dégradé orange plus subtil */ 0 0 15px 10px rgba(229, 46, 113, 0.4); /* Dégradé rose plus doux */
+        0 0 10px 5px rgba(255, 138, 0, 0.4),
+        0 0 15px 10px rgba(229, 46, 113, 0.4);
     }
   }
 

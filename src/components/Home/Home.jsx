@@ -51,10 +51,10 @@ const Home = () => {
           <span ref={el} />
         </p>
         <div className="home-content--btns">
-          <a href="LIEN-CV" className="btn-link">
+          <a href="#" className="btn-link">
             Télécharger mon CV
           </a>
-          <a href="FORMULAIRE-CONTACT" className="btn-link">
+          <a href="#" className="btn-link">
             Contactez-moi
           </a>
         </div>
