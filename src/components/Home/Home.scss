@@ -1,0 +1,16 @@
+@use '../../styles/variables' as v;
+.main-section {
+  height: 100vh;
+  color: v.$text;
+  display: flex;
+  padding: 5rem;
+  width: 60vw;
+  justify-content: center;
+  margin: auto;
+}
+.home-profil {
+  img {
+    width: 30vw;
+    border-radius: 50%;
+  }
+}

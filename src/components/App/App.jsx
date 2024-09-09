@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 
 import './App.scss';
 import BurgerMenu from '../Header/BurgerMenu';
+import Home from '../Home/Home';
 
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Header toggleMenu={toggleMenu} isModalOpen={isModalOpen} />
       <BurgerMenu isModalOpen={isModalOpen} />
+      <Home />
     </div>
   );
 }
