@@ -9,13 +9,14 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  border-radius: 20px;
+  // border-radius: 20px;
+  position: fixed;
+  background-color: v.$background;
+  z-index: 2;
 }
 
 .menu__wrapper {
   display: flex;
-  position: fixed;
-  z-index: 2;
   gap: 1.5rem;
   width: 100%;
   max-width: 60rem;
@@ -148,6 +149,7 @@
   border: 1px solid v.$gray-border;
   z-index: 2;
   animation: fadeIn 0.2s ease-in-out;
+  background-color: v.$secondary;
 }
 
 .list-items-with-description {

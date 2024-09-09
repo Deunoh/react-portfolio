@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import './App.scss';
 import BurgerMenu from '../Header/BurgerMenu';
 import Home from '../Home/Home';
+import Presentation from '../Presentation/Presentation';
 
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
@@ -16,6 +17,7 @@ function App() {
       <Header toggleMenu={toggleMenu} isModalOpen={isModalOpen} />
       <BurgerMenu isModalOpen={isModalOpen} />
       <Home />
+      <Presentation />
     </div>
   );
 }

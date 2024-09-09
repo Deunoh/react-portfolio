@@ -1,16 +1,34 @@
 @use '../../styles/variables' as v;
 .main-section {
-  height: 100vh;
+  min-height: 100vh;
   color: v.$text;
   display: flex;
   padding: 5rem;
-  width: 60vw;
+  width: 100vw;
   justify-content: center;
+  align-items: center;
   margin: auto;
-}
-.home-profil {
-  img {
-    width: 30vw;
-    border-radius: 50%;
+  gap: 2rem;
+  font-family: v.$main-title-font;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .home-profil {
+    img {
+      width: 20vw;
+      border-radius: 50%;
+    }
+  }
+  .main-section--wave {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
   }
 }

@@ -1,0 +1,5 @@
+@use '../../styles/variables' as v;
+.presentation-section {
+  height: 80vh;
+  background-color: v.$secondary;
+}
