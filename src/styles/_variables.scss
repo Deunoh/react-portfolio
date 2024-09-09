@@ -3,11 +3,10 @@ Définition de variables Sass, par exemple :
    $color: #282c34;
 */
 
+// Couleurs
 $background: #1c1c1c;
 $footer-bg: #161616;
 $primary-orange: #e95420;
-
-// Header
 
 $primary: #e95420;
 $text: #f9f9f9;
@@ -20,3 +19,7 @@ $gray-menu-button-hover: #232323;
 $navbar-height: 4rem;
 $gray-text-hover: #8f8f8f;
 $gray-icon: #a0a0a0;
+
+// Fonts
+
+$main-title-font: 'Raleway', system-ui;

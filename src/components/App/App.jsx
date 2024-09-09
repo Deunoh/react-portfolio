@@ -6,6 +6,7 @@ import BurgerMenu from '../Header/BurgerMenu';
 
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
+  const [darkMode, setIsDarkMode] = useState(false);
   const toggleMenu = () => {
     setIsmodalOpen(!isModalOpen);
   };

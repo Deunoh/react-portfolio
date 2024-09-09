@@ -2,7 +2,7 @@
 .modal {
   margin-top: v.$navbar-height;
   transition: top 0.9s;
-  background-color: paleturquoise;
+  background-color: v.$gray-border-hover;
   height: 100vh;
   position: fixed;
   top: -110vh;
@@ -19,12 +19,14 @@
   justify-content: center;
 }
 .navbar-mobile-list a {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
-  color: #1e2337;
+  color: v.$background;
   padding: 2rem;
 }
-
+.navbar-mobile-list a:hover {
+  color: v.$primary;
+}
 .change-modal {
   top: 0vh;
 }

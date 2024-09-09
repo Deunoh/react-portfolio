@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './BurgerMenu.scss';
 
 const BurgerMenu = ({ isModalOpen }) => {
@@ -11,6 +12,10 @@ const BurgerMenu = ({ isModalOpen }) => {
       </div>
     </div>
   );
+};
+
+BurgerMenu.propTypes = {
+  isModalOpen: PropTypes.bool.isRequired,
 };
 
 export default BurgerMenu;

@@ -2,7 +2,7 @@
 @use '../../styles/variables' as v;
 
 .header {
-  width: 80vw;
+  width: 100vw;
   border-bottom: 1px solid v.$gray-border;
   height: v.$navbar-height;
   display: flex;
@@ -248,7 +248,7 @@
     background: v.$gray-menu-button-hover;
   }
 
-  .burger-menu:focus {
+  .burger-menu:hover {
     outline: 1px solid v.$primary;
   }
 
