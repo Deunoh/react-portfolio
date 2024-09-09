@@ -39,7 +39,9 @@ const Home = () => {
       <div className="home-content">
         <h3>Bonjour, moi c'est</h3>
         <h1>Denovann Belloir</h1>
-        <h3>Et je suis développeur web !</h3>
+        <h3>
+          Et je suis <span className="gradient-text">développeur web</span> !
+        </h3>
         <p>
           Issu d'une reconversion, je suis prêt à mettre mes compétences à votre
           disposition !
@@ -53,7 +55,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-profil">
-        <img src={profil} alt="Denovann" />
+        <img className="profile-img" src={profil} alt="Denovann" />
       </div>
       <svg
         className="main-section--wave"
