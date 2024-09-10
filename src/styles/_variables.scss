@@ -1,14 +1,9 @@
-/*
-Définition de variables Sass, par exemple :
-   $color: #282c34;
-*/
-
 // Couleurs
 $background: #1c1c1c;
 $footer-bg: #161616;
-$primary-orange: #e95420;
 
 $primary: #e95420;
+$secondary-title: #ff8a00;
 $text: #f9f9f9;
 $background: #1c1c1c;
 $secondary: #2e2e2e;
@@ -20,6 +15,13 @@ $navbar-height: 4rem;
 $gray-text-hover: #8f8f8f;
 $gray-icon: #a0a0a0;
 
+$dark-paragraph: #e0e0e0;
+
 // Fonts
 
 $main-title-font: 'Raleway', system-ui;
+
+// espacement
+
+$paddings-side: 4rem;
+$paddings-side-mobile: 1.5rem;

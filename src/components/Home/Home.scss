@@ -3,7 +3,7 @@
   min-height: 100vh;
   color: v.$text;
   display: flex;
-  padding: 5rem;
+  padding: v.$paddings-side;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@
   .main-section {
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1.5rem;
+    padding: 0 v.$paddings-side-mobile;
     .home-profil {
       img {
         width: 35vw;

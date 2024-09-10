@@ -169,9 +169,8 @@
 }
 
 .list-items-with-description li:hover {
-  background: v.$secondary;
-  border-radius: 0.3rem;
-  border: 1px solid v.$primary;
+  background: v.$gray-border-hover;
+  border-radius: 5px;
 }
 
 .icon-wrapper svg {
