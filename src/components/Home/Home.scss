@@ -17,7 +17,7 @@
     margin-top: 1.5em;
 
     .btn-link {
-      cursor: pointer !important;
+      cursor: pointer;
       background-color: white;
       color: #bf4f74;
       padding: 0.5em 1.5em;
@@ -25,17 +25,11 @@
       font-size: 1em;
       text-decoration: none;
       text-align: center;
-      transition: background-color 0.3s ease, color 0.3s ease;
-
-      /* Créer une bordure avec un dégradé */
-      border: 2px solid transparent; /* Bordure transparente initiale */
-      background-image: linear-gradient(white, white),
-        linear-gradient(90deg, #ff8a00, #e52e71); /* Deux couches : une pour le fond blanc, l'autre pour le dégradé */
-      background-origin: border-box; /* Le fond commence à la bordure */
-      background-clip: padding-box, border-box; /* Le fond blanc reste dans le bouton, le dégradé est sur la bordure */
+      transition: background-color 0.3s ease;
+      border: 2px solid v.$primary;
 
       &:hover {
-        background-color: #bf4f74;
+        background-color: v.$primary;
         color: white;
       }
     }
@@ -85,6 +79,22 @@
 
 @media (max-width: 768px) {
   .main-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    .home-profil {
+      img {
+        width: 35vw;
+      }
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 }

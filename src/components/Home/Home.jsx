@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './Home.scss';
 import Typed from 'typed.js';
-import profil from '../../assets/profil.jpeg';
+import profil from '../../assets/profil3.jpeg';
 
 const Home = () => {
   const el = useRef(null);
