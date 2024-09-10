@@ -1,3 +1,4 @@
+// import Socialbar from '../Socialbar/Socialbar';
 import Socialbar from '../Socialbar/Socialbar';
 import './Presentation.scss';
 
@@ -40,9 +41,7 @@ const Presentation = () => {
           </p>
         </div>
       </div>
-      <div className="social-icons--container">
-        <Socialbar />
-      </div>
+      <Socialbar />
     </section>
   );
 };

@@ -177,7 +177,7 @@ const Header = ({ toggleMenu, isModalOpen }) => {
                             stroke="currentColor"
                             strokeWidth="2"
                             strokeLinecap="round"
-                            sstrokeLinejoin="round"
+                            strokeLinejoin="round"
                             className="icon icon-tabler icons-tabler-outline icon-tabler-cloud-upload"
                           >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -263,7 +263,7 @@ const Header = ({ toggleMenu, isModalOpen }) => {
 
 Header.propTypes = {
   isModalOpen: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
 };
 
 export default Header;
