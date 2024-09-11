@@ -4,15 +4,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 5rem;
   .skills-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 60%;
     .skills-container-list {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 1.5rem;
       padding: 0.5rem;
       .skills-techno-list {
@@ -22,7 +23,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        backdrop-filter: blur(40px);
+        // backdrop-filter: blur(40px);
         border-radius: 10px;
         background-color: #ffffff0a;
         .skills-techno-logo-container {
@@ -42,6 +43,7 @@
 
 .skills-title {
   color: v.$text;
+  padding: 1rem 0 0.5rem;
   border-bottom: 1px solid v.$text;
 }
 .javascript-bg {
@@ -80,4 +82,15 @@
 }
 .ubuntu-bg {
   background-color: #dd481426;
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    .skills-container {
+      width: 90%;
+      .skills-container-list {
+        gap: 0.5rem;
+      }
+    }
+  }
 }
