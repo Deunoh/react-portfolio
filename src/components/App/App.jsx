@@ -5,6 +5,7 @@ import './App.scss';
 import BurgerMenu from '../Header/BurgerMenu';
 import Home from '../Home/Home';
 import Presentation from '../Presentation/Presentation';
+import Skills from '../Skills/Skills';
 
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <BurgerMenu isModalOpen={isModalOpen} />
       <Home />
       <Presentation />
+      <Skills />
     </div>
   );
 }
