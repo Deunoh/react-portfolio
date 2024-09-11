@@ -1,4 +1,31 @@
+@use '../../styles/variables' as v;
 .skills-section {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    .skills-container-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .skills-techno-list {
+        width: 100px;
+        height: 100px;
+        color: v.$text;
+        padding: 15px;
+        border: 1px solid red;
+        .skills-techno-logo-container {
+        }
+      }
+    }
+  }
+}
+
+.skills-title {
+  color: v.$text;
+  border-bottom: 1px solid v.$text;
 }
