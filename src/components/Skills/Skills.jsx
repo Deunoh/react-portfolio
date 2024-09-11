@@ -9,7 +9,7 @@ const Skills = () => {
           <h3 className="skills-title">Frontend</h3>
           <ul className="skills-container-list">
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container javascript-bg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
                   <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
                   <path
@@ -21,7 +21,7 @@ const Skills = () => {
               <span>Javascript</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container react-bg">
                 <svg
                   viewBox="0 0 25 25"
                   fill="none"
@@ -37,7 +37,7 @@ const Skills = () => {
               <span>React</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container php-bg">
                 <svg
                   width="800px"
                   height="800px"
@@ -54,7 +54,7 @@ const Skills = () => {
               <span>Redux</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container html-bg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -67,7 +67,7 @@ const Skills = () => {
               <span>HTML</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container css-bg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
                   <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52" />
                   <path fill="#30a9dc" d="M226 472l149-41 35-394H226" />
@@ -84,7 +84,7 @@ const Skills = () => {
               <span>CSS</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container sass-bg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -97,7 +97,7 @@ const Skills = () => {
               <span>SASS</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container php-bg">
                 <svg
                   viewBox="0 0 256 204"
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ const Skills = () => {
           <h3 className="skills-title">Backend</h3>
           <ul className="skills-container-list">
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container php-bg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 100 50">
                   <path
                     fill="#fff"
@@ -128,7 +128,7 @@ const Skills = () => {
               <span>PHP</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container symfony-bg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -146,7 +146,7 @@ const Skills = () => {
               <span>Symfony</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container sql-bg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid"
@@ -170,7 +170,7 @@ const Skills = () => {
           <h3 className="skills-title">Outils</h3>
           <ul className="skills-container-list">
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container github-bg">
                 <svg
                   viewBox="0 0 256 250"
                   width="256"
@@ -185,7 +185,7 @@ const Skills = () => {
               <span>Github</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container figma-bg">
                 <svg
                   width="54"
                   height="80"
@@ -225,7 +225,7 @@ const Skills = () => {
               <span>Figma</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container vsc-bg">
                 <svg
                   viewBox="0 0 256 254"
                   xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +269,7 @@ const Skills = () => {
               <span>VS Code</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container wordpress-bg">
                 <svg
                   viewBox="0 0 122.52 122.523"
                   width="512"
@@ -288,7 +288,7 @@ const Skills = () => {
               <span>Wordpress</span>
             </li>
             <li className="skills-techno-list">
-              <div className="skills-techno-logo-container">
+              <div className="skills-techno-logo-container ubuntu-bg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="64"

@@ -28,7 +28,6 @@
         .skills-techno-logo-container {
           padding: 0.5rem;
           border-radius: 10px;
-          background-color: #f0db4f26;
           margin-bottom: 0.5rem;
           // width: fit-content;
           svg {
@@ -44,4 +43,41 @@
 .skills-title {
   color: v.$text;
   border-bottom: 1px solid v.$text;
+}
+.javascript-bg {
+  background-color: #f0db4f26;
+}
+.react-bg {
+  background-color: #7ee1fc26;
+}
+.html-bg {
+  background-color: #dd4b2526;
+}
+.css-bg {
+  background-color: #264de426;
+}
+.sass-bg {
+  background-color: #cf649a26;
+}
+.php-bg {
+  background-color: #6d10f426;
+}
+.symfony-bg {
+  background-color: #00000026;
+}
+.sql-bg {
+  background-color: #33679126;
+}
+.github-bg,
+.wordpress-bg {
+  background-color: #ffffff0a;
+}
+.figma-bg {
+  background-color: #a259ff26;
+}
+.vsc-bg {
+  background-color: #33abe326;
+}
+.ubuntu-bg {
+  background-color: #dd481426;
 }
