@@ -1,10 +1,28 @@
 import './Header.scss';
 import PropTypes from 'prop-types';
 import logo from '../../assets/logo.jpg';
+import { useEffect, useState } from 'react';
 
 const Header = ({ toggleMenu, isModalOpen }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="menu__wrapper">
         <div className="menu__bar--title-container">
           <a href="#" title="Home" aria-label="home" className="logo">

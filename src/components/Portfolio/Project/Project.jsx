@@ -31,12 +31,22 @@ const Project = () => {
         </p>
         <ul className="project-link-list">
           <li className="project-link-list--li">
-            <a href="#" className="project-link-list--a">
+            <a
+              href="google.fr"
+              className="project-link-list--a"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub size={40} /> Code
             </a>
           </li>
           <li className="project-link-list--li">
-            <a href="#" className="project-link-list--a">
+            <a
+              href="google.fr"
+              className="project-link-list--a"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLink size={40} /> Aperçu
             </a>
           </li>
