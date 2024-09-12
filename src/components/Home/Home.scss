@@ -80,11 +80,12 @@
 @media (max-width: 768px) {
   .main-section {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 4rem;
     padding: 0 v.$paddings-side-mobile;
     .home-profil {
       img {
-        width: 35vw;
+        width: 40vw;
       }
     }
     h1 {

@@ -1,43 +1,16 @@
 @use '../../styles/variables' as v;
+
 .skills-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-bottom: 5rem;
+
   .skills-container {
     display: flex;
     flex-direction: column;
     width: 60%;
-    .skills-container-list {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 1.5rem;
-      padding: 0.5rem;
-      .skills-techno-list {
-        width: 100px;
-        color: v.$text;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        // backdrop-filter: blur(40px);
-        border-radius: 10px;
-        background-color: #ffffff0a;
-        .skills-techno-logo-container {
-          padding: 0.5rem;
-          border-radius: 10px;
-          margin-bottom: 0.5rem;
-          // width: fit-content;
-          svg {
-            height: 30px;
-            width: 30px;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -46,51 +19,11 @@
   padding: 1rem 0 0.5rem;
   border-bottom: 1px solid v.$text;
 }
-.javascript-bg {
-  background-color: #f0db4f26;
-}
-.react-bg {
-  background-color: #7ee1fc26;
-}
-.html-bg {
-  background-color: #dd4b2526;
-}
-.css-bg {
-  background-color: #264de426;
-}
-.sass-bg {
-  background-color: #cf649a26;
-}
-.php-bg {
-  background-color: #6d10f426;
-}
-.symfony-bg {
-  background-color: #00000026;
-}
-.sql-bg {
-  background-color: #33679126;
-}
-.github-bg,
-.wordpress-bg {
-  background-color: #ffffff0a;
-}
-.figma-bg {
-  background-color: #a259ff26;
-}
-.vsc-bg {
-  background-color: #33abe326;
-}
-.ubuntu-bg {
-  background-color: #dd481426;
-}
 
 @media (max-width: 768px) {
   .skills-section {
     .skills-container {
       width: 90%;
-      .skills-container-list {
-        gap: 0.5rem;
-      }
     }
   }
 }

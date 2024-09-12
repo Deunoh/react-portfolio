@@ -1,8 +1,7 @@
 import React from 'react';
-import '../Skills.scss';
+import './SkillsList.scss';
 import PropTypes from 'prop-types';
 
-// Tableau d'objets qui mappe les technologies aux classes CSS correspondantes
 const skillsData = {
   javascript: {
     label: 'JavaScript',
@@ -310,16 +309,16 @@ const skillsData = {
 
 const SkillsList = ({ skills }) => {
   return (
-    <ul className="skills-container-list">
+    <ul className="skills-container-list skills-center">
       {skills.map((skill) => {
         const skillData = skillsData[skill];
-        if (!skillData) return null; // Sécurité pour gérer les compétences non mappées
+        if (!skillData) return null;
         return (
           <li key={skill} className="skills-techno-list">
             <div
               className={`skills-techno-logo-container ${skillData.className}`}
             >
-              {skillData.svg} {/* Affichage du SVG associé */}
+              {skillData.svg}
             </div>
             <span>{skillData.label}</span>
           </li>
