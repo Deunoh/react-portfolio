@@ -6,6 +6,7 @@ import BurgerMenu from '../Header/BurgerMenu';
 import Home from '../Home/Home';
 import Presentation from '../Presentation/Presentation';
 import Skills from '../Skills/Skills';
+import Portfolio from '../Portfolio/Portfolio';
 
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
       <Home />
       <Presentation />
       <Skills />
+      <Portfolio />
     </div>
   );
 }
