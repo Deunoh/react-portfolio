@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react';
 import './Header.scss';
 import PropTypes from 'prop-types';
 import logo from '../../assets/logo.jpg';
-import { useEffect, useState } from 'react';
 
 const Header = ({ toggleMenu, isModalOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Header = ({ toggleMenu, isModalOpen }) => {
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="menu__wrapper">
         <div className="menu__bar--title-container">
-          <a href="#" title="Home" aria-label="home" className="logo">
+          <a href="/" title="Home" aria-label="home" className="logo">
             <img src={logo} alt="logo" />
             <h1 className="menu__bar-title">Denovann Belloir</h1>
           </a>
