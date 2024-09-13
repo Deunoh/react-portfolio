@@ -6,7 +6,7 @@ const Skills = () => {
   const backendSkills = ['php', 'symfony', 'mysql'];
   const toolSkills = ['github', 'figma', 'vsc', 'wordpress', 'ubuntu'];
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills-section">
       <h2 className="main-title-section">Compétences techniques</h2>
       <div className="skills-container">
         <div className="skills-techno-container">

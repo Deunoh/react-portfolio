@@ -58,6 +58,7 @@ export default [
   {
     id: 6,
     title: 'High Fidelity Snap',
+    github: 'https://github.com/Deunoh/HighFidelitySnap',
     image: 'assets/logo-highfidelitysnap.png',
     alt: 'image highfidelitysnap',
     description:

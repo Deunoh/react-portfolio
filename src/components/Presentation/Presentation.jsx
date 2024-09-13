@@ -4,7 +4,7 @@ import './Presentation.scss';
 
 const Presentation = () => {
   return (
-    <section className="presentation-section">
+    <section className="presentation-section" id="presentation-section">
       <h2 className="main-title-section">Qui suis-je ?</h2>
       <div className="about_container">
         <div className="about_container-card">

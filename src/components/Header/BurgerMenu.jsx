@@ -5,10 +5,10 @@ const BurgerMenu = ({ isModalOpen }) => {
   return (
     <div className={`modal ${isModalOpen ? 'change-modal' : ''}`}>
       <div className="navbar-mobile-list">
-        <a href="#home">Qui suis-je ?</a>
-        <a href="#about">Compétences</a>
-        <a href="#services">Projets</a>
-        <a href="#contact">Contact</a>
+        <a href="#presentation-section">Qui suis-je ?</a>
+        <a href="#skills-section">Compétences</a>
+        <a href="#portfolio-section">Projets</a>
+        <a href="#contact-section">Contact</a>
       </div>
     </div>
   );

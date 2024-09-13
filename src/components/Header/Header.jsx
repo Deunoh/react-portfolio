@@ -214,17 +214,17 @@ const Header = ({ toggleMenu, isModalOpen }) => {
                 </div>
               </li>
               <li>
-                <a href="#devs" title="Developers">
+                <a href="#presentation-section" title="presentation">
                   Qui suis-je ?
                 </a>
               </li>
               <li>
-                <a href="#pricing" title="Pricing">
+                <a href="#skills-section" title="Skills">
                   Compétences
                 </a>
               </li>
               <li>
-                <a href="#docs" title="Docs">
+                <a href="#contact-section" title="Contact">
                   Contact
                 </a>
               </li>

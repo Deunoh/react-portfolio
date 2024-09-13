@@ -7,6 +7,8 @@ import Home from '../Home/Home';
 import Presentation from '../Presentation/Presentation';
 import Skills from '../Skills/Skills';
 import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
@@ -22,6 +24,8 @@ function App() {
       <Presentation />
       <Skills />
       <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }

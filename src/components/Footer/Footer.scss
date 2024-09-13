@@ -1,0 +1,16 @@
+@use '../../styles/variables' as v;
+
+footer {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  // background-color: v.$footer-dark;
+  width: 100vw;
+  .footer-text-paragraph {
+    position: absolute;
+    bottom: 1rem;
+    color: v.$dark-paragraph;
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
