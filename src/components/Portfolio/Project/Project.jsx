@@ -4,9 +4,18 @@ import { FaLink } from 'react-icons/fa6';
 import SkillsList from '../../Skills/SkillsList/SkillsList';
 import './Project.scss';
 
-const Project = ({ title, link, github, image, alt, description, technos }) => {
+const Project = ({
+  title,
+  anchor,
+  link,
+  github,
+  image,
+  alt,
+  description,
+  technos,
+}) => {
   return (
-    <div className="project-card-container">
+    <div className="project-card-container" id={anchor}>
       <div className="project-card-substance">
         <img src={image} alt={alt} />
         <SkillsList skills={technos} />
@@ -48,6 +57,7 @@ const Project = ({ title, link, github, image, alt, description, technos }) => {
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
+  anchor: PropTypes.string.isRequired,
   link: PropTypes.string,
   github: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,

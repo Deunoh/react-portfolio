@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Header toggleMenu={toggleMenu} isModalOpen={isModalOpen} />
-      <BurgerMenu isModalOpen={isModalOpen} />
+      <BurgerMenu toggleMenu={toggleMenu} isModalOpen={isModalOpen} />
       <Home />
       <Presentation />
       <Skills />
