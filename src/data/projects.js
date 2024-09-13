@@ -24,7 +24,7 @@ export default [
   {
     id: 3,
     title: 'Premier portfolio',
-    link: '#',
+    link: 'https://denovann.tech/',
     github: 'https://github.com/Deunoh/portfolio',
     image: 'assets/portfolio.png',
     alt: 'image portfolio',
