@@ -1,11 +1,14 @@
 import './Portfolio.scss';
 import Project from './Project/Project';
+import projectsData from '../../data/projects';
 
 const Portfolio = () => {
   return (
     <section className="portfolio-section">
       <h2 className="main-title-section">Projets</h2>
-      <Project />
+      {projectsData.map((project) => (
+        <Project key={project.id} {...project} />
+      ))}
     </section>
   );
 };
