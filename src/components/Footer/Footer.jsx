@@ -100,7 +100,7 @@ const Footer = () => {
       </svg>
 
       <p className="footer-text-paragraph">
-        Denovann Belloir | {new Date().getFullYear()}
+        Conçu et développé par Denovann Belloir | {new Date().getFullYear()}
       </p>
       <a href="#home">
         <FaChevronCircleUp size={50} className="back-to-top" />
