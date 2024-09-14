@@ -6,6 +6,7 @@
   color: v.$text;
 }
 .presentation-section {
+  overflow-x: hidden;
   width: 100vw;
   background-color: v.$secondary;
   // padding: 0 v.$paddings-side;
@@ -36,6 +37,25 @@
         color: v.$dark-paragraph;
       }
     }
+    // ANIMATIONS
+    // .past-elem {
+    //   transform: translateX(-100%);
+    //   opacity: 0;
+    //   transition: transform 0.5s ease-out, opacity 0.4s ease-out;
+    // }
+    // .past-elem.active {
+    //   transform: translateX(0);
+    //   opacity: 1;
+    // }
+    // .future-elem {
+    //   transform: translateX(100%);
+    //   opacity: 0;
+    //   transition: transform 0.5s ease-out, opacity 0.4s ease-out;
+    // }
+    // .future-elem.active {
+    //   transform: translateX(0);
+    //   opacity: 1;
+    // }
   }
 }
 

@@ -1,13 +1,34 @@
-// import Socialbar from '../Socialbar/Socialbar';
+import { useEffect, useRef } from 'react';
+
 import Socialbar from '../Socialbar/Socialbar';
 import './Presentation.scss';
 
 const Presentation = () => {
+  const pastRef = useRef();
+  const futureRef = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        pastRef.current.classList.add(
+          'animate__animated',
+          'animate__backInLeft'
+        );
+        futureRef.current.classList.add(
+          'animate__animated',
+          'animate__backInRight'
+        );
+      }
+    });
+    observer.observe(pastRef.current);
+    observer.observe(futureRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="presentation-section" id="presentation-section">
       <h2 className="main-title-section">Qui suis-je ?</h2>
       <div className="about_container">
-        <div className="about_container-card">
+        <div className="about_container-card past-elem" ref={pastRef}>
           <h3>Passé</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -18,7 +39,7 @@ const Presentation = () => {
             Perferendis sint hic qui aut!
           </p>
         </div>
-        <div className="about_container-card">
+        <div className="about_container-card present-elem">
           <h3>Présent</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -33,7 +54,7 @@ const Presentation = () => {
             incidunt officiis!
           </p>
         </div>
-        <div className="about_container-card">
+        <div className="about_container-card future-elem" ref={futureRef}>
           <h3>Futur</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
