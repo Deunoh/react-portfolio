@@ -1,27 +1,9 @@
-import { useEffect, useState } from 'react';
 import './Header.scss';
 import PropTypes from 'prop-types';
 import logo from '../../assets/logo.jpg';
 import projectsData from '../../data/projects';
 
-const Header = ({ toggleMenu, isModalOpen }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+const Header = ({ toggleMenu, isModalOpen, isScrolled }) => {
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="menu__wrapper">
@@ -134,6 +116,7 @@ const Header = ({ toggleMenu, isModalOpen }) => {
 Header.propTypes = {
   isModalOpen: PropTypes.bool.isRequired,
   toggleMenu: PropTypes.func.isRequired,
+  isScrolled: PropTypes.bool.isRequired,
 };
 
 export default Header;

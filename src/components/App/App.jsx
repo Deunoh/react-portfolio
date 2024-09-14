@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 
 import './App.scss';
@@ -13,14 +13,34 @@ import Footer from '../Footer/Footer';
 function App() {
   const [isModalOpen, setIsmodalOpen] = useState(false);
   const [darkMode, setIsDarkMode] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const toggleMenu = () => {
     setIsmodalOpen(!isModalOpen);
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="App">
-      <Header toggleMenu={toggleMenu} isModalOpen={isModalOpen} />
+      <Header
+        toggleMenu={toggleMenu}
+        isModalOpen={isModalOpen}
+        isScrolled={isScrolled}
+      />
       <BurgerMenu toggleMenu={toggleMenu} isModalOpen={isModalOpen} />
-      <Home />
+      <Home isScrolled={isScrolled} />
       <Presentation />
       <Skills />
       <Portfolio />

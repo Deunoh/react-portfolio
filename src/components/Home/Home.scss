@@ -11,26 +11,28 @@
   gap: 2rem;
 
   //Btns
-  .home-content--btns {
-    display: flex;
-    gap: 1em;
-    margin-top: 1.5em;
+  .home-content {
+    .home-content--btns {
+      display: flex;
+      gap: 1em;
+      margin-top: 1.5em;
 
-    .btn-link {
-      cursor: pointer;
-      background-color: white;
-      color: #bf4f74;
-      padding: 0.5em 1.5em;
-      border-radius: 5px;
-      font-size: 1em;
-      text-decoration: none;
-      text-align: center;
-      transition: background-color 0.3s ease;
-      border: 2px solid v.$primary;
+      .btn-link {
+        // cursor: pointer;
+        background-color: white;
+        color: #bf4f74;
+        padding: 0.5em 1.5em;
+        border-radius: 5px;
+        font-size: 1em;
+        // text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        border: 2px solid v.$primary;
 
-      &:hover {
-        background-color: v.$primary;
-        color: white;
+        &:hover {
+          background-color: v.$primary;
+          color: white;
+        }
       }
     }
   }
@@ -74,6 +76,11 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
+  }
+  .dotlottie-animation--scroll {
+    position: absolute;
+    bottom: 2rem;
+    width: 80px;
   }
 }
 

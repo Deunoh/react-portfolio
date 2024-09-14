@@ -13,4 +13,32 @@ footer {
     text-align: center;
     padding: 0 2rem;
   }
+  .back-to-top {
+    color: v.$text;
+    position: absolute;
+    right: 4rem;
+    bottom: 3rem;
+    cursor: pointer;
+  }
+  .back-to-top:hover {
+    animation: rotate 0.5s ease-in-out;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }

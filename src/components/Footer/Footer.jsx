@@ -1,3 +1,4 @@
+import { FaChevronCircleUp } from 'react-icons/fa';
 import './Footer.scss';
 
 const Footer = () => {
@@ -14,7 +15,6 @@ const Footer = () => {
         xmlSpace="preserve"
       >
         <defs>
-          {/* Définition du dégradé linéaire */}
           <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop
               offset="0%"
@@ -102,6 +102,9 @@ const Footer = () => {
       <p className="footer-text-paragraph">
         Denovann Belloir | {new Date().getFullYear()}
       </p>
+      <a href="#home">
+        <FaChevronCircleUp size={50} className="back-to-top" />
+      </a>
     </footer>
   );
 };
