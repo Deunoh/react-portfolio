@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { FaGithub } from 'react-icons/fa';
 import { FaLink } from 'react-icons/fa6';
@@ -14,8 +15,25 @@ const Project = ({
   description,
   technos,
 }) => {
+  const projectRef = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          projectRef.current.classList.add(
+            'animate__animated',
+            'animate__fadeInUp',
+            'visible'
+          );
+        }
+      },
+      { threshold: 0.8 }
+    );
+    observer.observe(projectRef.current);
+    return () => observer.disconnect();
+  }, []);
   return (
-    <div className="project-card-container" id={anchor}>
+    <div className="project-card-container" id={anchor} ref={projectRef}>
       <div className="project-card-substance">
         <img src={image} alt={alt} />
         <SkillsList skills={technos} />

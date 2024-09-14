@@ -1,5 +1,5 @@
-// import Socialbar from '../Socialbar/Socialbar';
 import { useEffect, useRef } from 'react';
+
 import Socialbar from '../Socialbar/Socialbar';
 import './Presentation.scss';
 
@@ -9,14 +9,21 @@ const Presentation = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
-        pastRef.current.classList.add('active');
-        futureRef.current.classList.add('active');
+        pastRef.current.classList.add(
+          'animate__animated',
+          'animate__backInLeft'
+        );
+        futureRef.current.classList.add(
+          'animate__animated',
+          'animate__backInRight'
+        );
       }
     });
     observer.observe(pastRef.current);
     observer.observe(futureRef.current);
     return () => observer.disconnect();
   }, []);
+
   return (
     <section className="presentation-section" id="presentation-section">
       <h2 className="main-title-section">Qui suis-je ?</h2>

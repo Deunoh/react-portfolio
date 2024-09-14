@@ -1,5 +1,6 @@
 @use '../../../styles/variables' as v;
 .project-card-container {
+  opacity: 0;
   display: flex;
   gap: 20px;
   width: 90%;
@@ -73,7 +74,9 @@
     }
   }
 }
-
+.visible {
+  opacity: 1;
+}
 @media (max-width: 768px) {
   .project-card-container {
     flex-direction: column-reverse;

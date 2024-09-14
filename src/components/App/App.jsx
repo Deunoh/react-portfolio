@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from '../Header/Header';
-
+import 'animate.css';
 import './App.scss';
 import BurgerMenu from '../Header/BurgerMenu';
 import Home from '../Home/Home';

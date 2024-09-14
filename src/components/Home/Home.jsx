@@ -69,7 +69,9 @@ const Home = ({ isScrolled }) => {
         <img className="profile-img" src={profil} alt="Denovann" />
       </div>
       <svg
-        className="main-section--wave"
+        className={`main-section--wave ${
+          isScrolled ? 'animate__animated animate__fadeOutLeftBig' : ''
+        }`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
