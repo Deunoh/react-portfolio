@@ -1,12 +1,21 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import PropTypes from 'prop-types';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Home.scss';
 import Typed from 'typed.js';
 import profil from '../../assets/profil3.jpeg';
 
 const Home = ({ isScrolled }) => {
   const el = useRef(null);
+  const [showScroll, setShowSroll] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSroll(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -81,7 +90,7 @@ const Home = ({ isScrolled }) => {
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         />
       </svg>
-      {!isScrolled && (
+      {!isScrolled && showScroll && (
         <DotLottieReact
           src="assets/Animation - 1726257010810.json"
           loop

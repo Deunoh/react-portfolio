@@ -82,7 +82,7 @@
   .dotlottie-animation--scroll {
     position: absolute;
     bottom: 2rem;
-    width: 80px;
+    width: 50px;
   }
 }
 
@@ -90,7 +90,7 @@
   .main-section {
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     padding: 0 v.$paddings-side-mobile;
     .home-profil {
       img {
@@ -107,7 +107,7 @@
       font-size: 1rem;
     }
     .dotlottie-animation--scroll {
-      bottom: 1rem;
+      bottom: 0.5rem;
     }
   }
 }
