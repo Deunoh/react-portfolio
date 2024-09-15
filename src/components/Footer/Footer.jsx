@@ -11,8 +11,8 @@ const Footer = () => {
         x="0px"
         y="0px"
         viewBox="0 0 1300 550"
-        style={{ enableBackground: 'new 0 0 1300 550' }}
-        xmlSpace="preserve"
+        // style={{ enableBackground: 'new 0 0 1300 550' }}
+        // xmlSpace="preserve"
       >
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">

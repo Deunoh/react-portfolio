@@ -74,14 +74,13 @@ const Presentation = () => {
           <h3>Futur</h3>
           <p>
             Je suis fasciné par l&apos;évolution constante du domaine du
-            développement web, un secteur en perpétuel mouvement où chaque
-            avancée ouvre de nouvelles opportunités. Cette dynamique me motive à
-            rester à jour et à approfondir mes connaissances. Je me vois dans
-            quelques années comme un développeur aguerri, pleinement épanoui
-            dans cette carrière qui est devenue bien plus qu&apos;un simple
-            métier, mais une véritable passion. Pouvoir pratiquer cette passion
-            au quotidien et contribuer à des projets stimulants est un objectif
-            que j&apos;ai hâte d&apos;atteindre.
+            développement web, les langages évoluent, les façon de coder aussi.
+            Cette dynamique me motive à rester à jour et à approfondir mes
+            connaissances. Je me vois dans quelques années comme un développeur
+            aguerri, pleinement épanoui dans cette carrière qui est devenue bien
+            plus qu&apos;un simple métier, mais une véritable passion. Pouvoir
+            pratiquer cette passion au quotidien et contribuer à des projets
+            stimulants est un objectif que j&apos;ai hâte d&apos;atteindre.
           </p>
         </div>
       </div>
