@@ -7,14 +7,50 @@ import profil from '../../assets/profil3.jpeg';
 
 const Home = ({ isScrolled }) => {
   const el = useRef(null);
+  const imageRef = useRef(null);
+  const h3Ref1 = useRef(null); // Ref pour le premier titre h3
+  const h1Ref = useRef(null); // Ref pour le h1
+  const h3Ref2 = useRef(null); // Ref pour le deuxième h3
+  const pRef = useRef(null); // Ref pour le paragraphe
+  const btnsRef = useRef(null); // Ref pour les boutons
   const [showScroll, setShowSroll] = useState(false);
 
+  // timeout pour le svg scroll
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSroll(true);
     }, 5000);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  // Animations au premier rendu
+  useEffect(() => {
+    if (imageRef.current) {
+      imageRef.current.classList.add('animate__animated', 'animate__rotateIn');
+    }
+
+    if (h3Ref1.current) {
+      h3Ref1.current.classList.add('animate__animated', 'animate__fadeInDown');
+    }
+
+    if (h1Ref.current) {
+      h1Ref.current.classList.add('animate__animated', 'animate__fadeInDown');
+    }
+
+    if (h3Ref2.current) {
+      h3Ref2.current.classList.add('animate__animated', 'animate__fadeInDown');
+    }
+
+    if (pRef.current) {
+      pRef.current.classList.add('animate__animated', 'animate__fadeInDown');
+    }
+    if (btnsRef.current) {
+      btnsRef.current.classList.add(
+        'animate__animated',
+        'animate__fadeInLeftBig'
+      );
+    }
   }, []);
 
   useEffect(() => {
@@ -49,22 +85,22 @@ const Home = ({ isScrolled }) => {
   return (
     <section className="main-section" id="home">
       <div className="home-content">
-        <h3>Bonjour, moi c&apos;est</h3>
-        <h1>Denovann Belloir</h1>
-        <h3>
+        <h3 ref={h3Ref1}>Bonjour, moi c&apos;est</h3>
+        <h1 ref={h1Ref}>Denovann Belloir</h1>
+        <h3 ref={h3Ref2}>
           Et je suis <span className="gradient-text">développeur web</span> !
         </h3>
-        <p>
+        <p ref={pRef}>
           Issu d&apos;une reconversion, je suis prêt à mettre mes compétences à
           votre disposition !
         </p>
         <p>
           <span ref={el} />
         </p>
-        <div className="home-content--btns">
+        <div className="home-content--btns" ref={btnsRef}>
           <a
             download
-            href="assets/CV-Denovann-alternance.pdf"
+            href="assets/cv_alternance-09-24.pdf"
             className="btn-link"
           >
             Télécharger mon CV
@@ -75,7 +111,12 @@ const Home = ({ isScrolled }) => {
         </div>
       </div>
       <div className="home-profil">
-        <img className="profile-img" src={profil} alt="Denovann" />
+        <img
+          className="profile-img"
+          src={profil}
+          alt="Denovann"
+          ref={imageRef}
+        />
       </div>
       <svg
         className={`main-section--wave ${
