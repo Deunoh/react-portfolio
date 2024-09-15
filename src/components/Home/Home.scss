@@ -59,6 +59,7 @@
   }
   .gradient-text {
     background: linear-gradient(90deg, #ff8a00, #e52e71);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -86,7 +87,7 @@
 
 @media (max-width: 768px) {
   .main-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     gap: 4rem;
     padding: 0 v.$paddings-side-mobile;
