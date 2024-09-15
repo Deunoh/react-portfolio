@@ -18,6 +18,7 @@
       margin-top: 1.5em;
 
       .btn-link {
+        z-index: 1;
         // cursor: pointer;
         background-color: white;
         color: #bf4f74;
@@ -104,6 +105,9 @@
     }
     p {
       font-size: 1rem;
+    }
+    .dotlottie-animation--scroll {
+      bottom: 1rem;
     }
   }
 }
