@@ -25,7 +25,7 @@
     border-bottom: 1px solid v.$text;
     .about_container-card {
       font-family: v.$main-title-font;
-      text-align: start;
+      text-align: justify;
       max-width: 30%;
       h3 {
         text-align: center;
@@ -39,6 +39,9 @@
         font-family: v.$main-title-font;
         font-weight: 300;
         line-height: 1.3;
+        // Pour le justify
+        word-spacing: -1px;
+        hyphens: auto;
       }
       .present-elem-links {
         text-decoration: underline;

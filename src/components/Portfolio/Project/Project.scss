@@ -45,6 +45,8 @@
     .project-card-form--description {
       width: 90%;
       text-align: justify;
+      word-spacing: -1px;
+      hyphens: auto;
       line-height: normal;
       max-height: 50%;
       overflow-y: auto;
