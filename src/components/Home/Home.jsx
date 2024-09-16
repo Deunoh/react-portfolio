@@ -100,7 +100,7 @@ const Home = ({ isScrolled }) => {
         <div className="home-content--btns" ref={btnsRef}>
           <a
             download
-            href="assets/cv_alternance-09-24.pdf"
+            href="assets/CV_Denovann_Belloir.pdf"
             className="btn-link"
           >
             Télécharger mon CV
