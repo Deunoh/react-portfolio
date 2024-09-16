@@ -52,13 +52,9 @@ const Presentation = () => {
             et web mobile que j&apos;ai beaucoup appréciée. Elle m&apos;a permis
             d&apos;apprendre les notions de base ainsi que les bonnes pratiques
             de codage. En fin de parcours, j&apos;ai eu l&apos;opportunité de
-            travailler sur un{' '}
-            <a className="present-elem-links" href="#apocalypse">
-              projet
-            </a>{' '}
-            en équipe dans des conditions similaires à celles d&apos;une
-            entreprise, en suivant la méthodologie agile Scrum. Nous avions un
-            mois pour réaliser ce{' '}
+            travailler sur un projet en équipe dans des conditions similaires à
+            celles d&apos;une entreprise, en suivant la méthodologie agile
+            Scrum. Nous avions un mois pour réaliser ce{' '}
             <a className="present-elem-links" href="#apocalypse">
               projet
             </a>

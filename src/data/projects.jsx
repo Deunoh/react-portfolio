@@ -37,7 +37,7 @@ export default [
     id: 2,
     anchor: 'promoliegeois',
     title: 'Promoliegeois',
-    link: 'https://github.com/Deunoh/homepage-liegeois',
+    link: 'https://promoliegeois.net/',
     github: 'https://github.com/Deunoh/homepage-liegeois',
     image: 'assets/promoliegeois.png',
     alt: 'projet promoliegeois',
