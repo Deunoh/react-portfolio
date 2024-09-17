@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import './Contact.scss';
+import { useState } from 'react';
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -9,6 +10,7 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 // Initialisation de la clé api publique
 emailjs.init(PUBLIC_KEY);
 const Contact = () => {
+  const [status, setStatus] = useState({ type: '', message: '' });
   const {
     register,
     handleSubmit,
@@ -26,15 +28,19 @@ const Contact = () => {
       })
       .then(
         (response) => {
-          console.log(
-            'Email sent successfully!',
-            response.status,
-            response.text
-          );
-          reset(); // Réinitialiser le formulaire après envoi
+          console.log('Email envoyé !', response.status, response.text);
+          setStatus({
+            type: 'success',
+            message: 'Message envoyé avec succès !',
+          });
+          reset();
         },
         (error) => {
-          console.log('Failed to send email:', error);
+          console.log('Erreur mail', error);
+          setStatus({
+            type: 'error',
+            message: "Échec de l'envoi du message. Veuillez réessayer.",
+          });
         }
       );
   };
@@ -93,6 +99,11 @@ const Contact = () => {
         </div>
         <div className="form-container">
           <h3 className="form-title">Vous voulez en savoir plus ?</h3>
+          {status.message && (
+            <div className={`status-message ${status.type}`}>
+              {status.message}
+            </div>
+          )}
           <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor="name">Nom</label>
