@@ -5,78 +5,123 @@
   flex-direction: column;
   width: 100vw;
   padding: 0 v.$paddings-side;
-  .form-container {
-    width: 50%;
-    height: fit-content;
-    // padding: 1.5rem;
+  .contact-container-flex {
+    width: 80%;
+    gap: 1.5rem;
     display: flex;
-    flex-direction: column;
-    .form-title {
-      width: 100%;
-      font-size: 1.2rem;
-      color: v.$text;
-      margin-bottom: 0.5rem;
-      text-align: center;
-    }
-    form {
+    .others-contact {
+      width: 50%;
       display: flex;
       flex-direction: column;
-      button {
-        width: 100%;
-        margin: 10px;
-        padding: 10px 15px;
-        background-color: v.$primary;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-
+      gap: 1rem;
+      .contact-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid v.$gray-border;
+        border-radius: 10px;
+        background-color: v.$container-bg;
+        svg {
+          color: v.$text;
+        }
         &:hover {
           background-color: darken(v.$primary, 10%);
         }
-
-        &:focus {
-          outline: none;
-          box-shadow: 0 0 0 3px rgba(v.$primary, 0.3);
+      }
+      .contact-mail {
+        height: 50%;
+      }
+      .contact-list {
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        .contact-phone {
+          width: 50%;
+        }
+        .contact-li {
+          width: 50%;
         }
       }
-      .form-group {
-        position: relative;
-        input,
-        textarea {
-          padding: 0 0.5rem;
-          color: v.$text;
-          border: 1px solid v.$gray-text-hover;
-          border-radius: 6px;
-          position: relative;
+    }
+    .form-container {
+      width: 50%;
+      height: fit-content;
+      // padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      .form-title {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: v.$text;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      form {
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        button {
           width: 100%;
           margin: 10px;
-          line-height: 6ex;
-          background: none;
-          transition: border-color 0.3s ease;
+          padding: 10px 15px;
+          background-color: v.$primary;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: darken(v.$primary, 10%);
+          }
 
           &:focus {
-            border-color: v.$primary;
             outline: none;
-          }
-          &::placeholder {
-            margin-left: 0.5rem;
-            padding-left: 0.5rem;
+            box-shadow: 0 0 0 3px rgba(v.$primary, 0.3);
           }
         }
+        .form-group {
+          position: relative;
+          input,
+          textarea {
+            padding: 0 0.5rem;
+            color: v.$text;
+            border: 1px solid v.$gray-icon;
+            border-radius: 6px;
+            position: relative;
+            width: 100%;
+            margin: 10px;
+            line-height: 6ex;
+            background: none;
+            transition: border-color 0.3s ease;
 
-        label {
-          color: v.$gray-text-hover;
-          position: absolute;
-          top: 0.2ex;
-          z-index: 1;
-          left: 2em;
-          background-color: v.$background;
-          padding: 0 5px;
-          transition: color 0.3s ease;
+            &:focus {
+              border-color: v.$primary;
+              outline: none;
+            }
+            &:hover {
+              border-color: v.$primary;
+            }
+            &::placeholder {
+              margin-left: 0.5rem;
+              padding-left: 0.5rem;
+            }
+          }
+
+          label {
+            color: v.$gray-icon;
+            position: absolute;
+            top: 0.2ex;
+            z-index: 1;
+            left: 2em;
+            background-color: v.$background;
+            padding: 0 5px;
+            transition: color 0.3s ease;
+          }
         }
       }
     }
