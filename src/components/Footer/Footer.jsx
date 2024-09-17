@@ -11,6 +11,7 @@ const Footer = () => {
         x="0px"
         y="0px"
         viewBox="0 0 1300 550"
+        className="animate-footer-wave"
         // style={{ enableBackground: 'new 0 0 1300 550' }}
         // xmlSpace="preserve"
       >

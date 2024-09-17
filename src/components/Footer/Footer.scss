@@ -42,3 +42,15 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  footer {
+    height: 150px;
+    .animate-footer-wave {
+      display: none;
+    }
+    .back-to-top {
+      bottom: 4rem;
+    }
+  }
+}
