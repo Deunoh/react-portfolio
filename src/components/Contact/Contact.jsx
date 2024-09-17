@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Socialbar from '../Socialbar/Socialbar';
 import './Contact.scss';
 
 const Contact = () => {
