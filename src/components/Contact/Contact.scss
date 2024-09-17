@@ -133,6 +133,16 @@
             padding: 0 5px;
             transition: color 0.3s ease;
           }
+          .error-message {
+            padding: 5px 0;
+            width: 100%;
+            border-radius: 3px;
+            text-align: center;
+            margin-left: 10px;
+            color: v.$text;
+            // background-color: darken($color: rgba(v.$primary, 0.4), $amount: 0);
+            border: 1px solid darken($color: rgba(red, 0.3), $amount: 0);
+          }
         }
       }
     }

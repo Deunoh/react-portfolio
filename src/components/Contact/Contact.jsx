@@ -1,23 +1,43 @@
-import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 import './Contact.scss';
 
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+// Initialisation de la clé api publique
+emailjs.init(PUBLIC_KEY);
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const onSubmit = (data) => {
+    console.log('Form submitted:', data);
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      })
+      .then(
+        (response) => {
+          console.log(
+            'Email sent successfully!',
+            response.status,
+            response.text
+          );
+          reset(); // Réinitialiser le formulaire après envoi
+        },
+        (error) => {
+          console.log('Failed to send email:', error);
+        }
+      );
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., send data to a server)
-    console.log('Form submitted:', formData);
-  };
-
   return (
     <section className="contact-section" id="contact-section">
       <h2 className="main-title-section">Contact</h2>
@@ -73,7 +93,7 @@ const Contact = () => {
         </div>
         <div className="form-container">
           <h3 className="form-title">Vous voulez en savoir plus ?</h3>
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor="name">Nom</label>
               <input
@@ -81,10 +101,11 @@ const Contact = () => {
                 id="name"
                 name="name"
                 placeholder="Votre nom"
-                value={formData.name}
-                onChange={handleChange}
-                required
+                {...register('name', { required: 'Nom requis' })}
               />
+              {errors.name && (
+                <p className="error-message">{errors.name.message}</p>
+              )}
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -93,10 +114,17 @@ const Contact = () => {
                 id="email"
                 name="email"
                 placeholder="Votre email"
-                value={formData.email}
-                onChange={handleChange}
-                required
+                {...register('email', {
+                  required: 'Email requis',
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: 'Adresse email invalide',
+                  },
+                })}
               />
+              {errors.email && (
+                <p className="error-message">{errors.email.message}</p>
+              )}
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
@@ -104,10 +132,11 @@ const Contact = () => {
                 id="message"
                 name="message"
                 placeholder="Votre message"
-                value={formData.message}
-                onChange={handleChange}
-                required
+                {...register('message', { required: 'Message requis' })}
               />
+              {errors.message && (
+                <p className="error-message">{errors.message.message}</p>
+              )}
             </div>
             <button type="submit">Envoyer le message</button>
           </form>
