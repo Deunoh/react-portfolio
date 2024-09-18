@@ -111,7 +111,6 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Votre nom"
                 {...register('name', { required: 'Nom requis' })}
               />
               {errors.name && (
@@ -124,7 +123,6 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Votre email"
                 {...register('email', {
                   required: 'Email requis',
                   pattern: {
@@ -142,7 +140,6 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                placeholder="Votre message"
                 {...register('message', { required: 'Message requis' })}
               />
               {errors.message && (
