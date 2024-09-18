@@ -56,19 +56,25 @@ const Home = ({ isScrolled }) => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        '<span style="background-color: #F0DB4F; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">JavaScript</span>', // Badge jaune avec texte noir
-        '<span style="background-color: #8892BF; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">PHP</span>', // Badge bleu avec texte blanc
-        '<span style="background-color: #4F5B93; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Symfony</span>', // Badge bleu foncé avec texte blanc
-        '<span style="background-color: #4479A1; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">MySQL</span>', // Badge bleu clair avec texte blanc
-        '<span style="background-color: #61DBFB; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">React</span>', // Badge bleu clair avec texte noir
-        '<span style="background-color: #764ABC; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Redux</span>', // Badge violet avec texte blanc
-        '<span style="background-color: #FCC624; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Linux</span>', // Badge jaune avec texte noir
-        '<span style="background-color: #2965F1; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">CSS</span>',
-        '<span style="background-color: #CC6699; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">SASS</span>', // Badge bleu avec texte blanc
-        '<span style="background-color: #181717; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Github</span>', // Badge noir avec texte blanc
-        '<span style="background-color: #E34F26; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">API</span>', // Badge orange avec texte blanc
-        '<span style="background-color: #5C2D91; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">POO</span>', // Badge violet avec texte blanc
-        '<span style="background-color: #21759B; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Wordpress</span>', // Badge bleu avec texte blanc
+        '<span style="background-color: #F0DB4F; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">JavaScript</span>',
+        '<span style="color: #FF5733; font-weight: bold;">Je suis curieux</span>',
+        '<span style="background-color: #8892BF; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">PHP</span>',
+        '<span style="color: #FF5733; font-weight: bold;">Je suis autonome</span>',
+        '<span style="background-color: #4F5B93; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Symfony</span>',
+        '<span style="color: #FF5733; font-weight: bold;">J\'ai un ésprit d\'équipe</span>',
+        // '<span style="background-color: #4479A1; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">MySQL</span>',
+        '<span style="background-color: #61DBFB; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">React</span>',
+        '<span style="color: #FF5733; font-weight: bold;">Je suis fiable</span>',
+        // '<span style="background-color: #764ABC; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Redux</span>',
+        // '<span style="background-color: #FCC624; color: black; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Linux</span>',
+        // '<span style="background-color: #2965F1; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">CSS</span>',
+        // '<span style="background-color: #CC6699; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">SASS</span>',
+        '<span style="background-color: #181717; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Github</span>',
+        '<span style="color: #FF5733; font-weight: bold;">Je suis calme</span>',
+        '<span style="background-color: #E34F26; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">API</span>',
+        '<span style="color: #FF5733; font-weight: bold;">Je suis passionné</span>',
+        '<span style="background-color: #5C2D91; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">POO</span>',
+        '<span style="background-color: #21759B; color: white; font-weight: bold; padding: 2px 8px; border-radius: 12px;">Wordpress</span>',
         '<span style="color: #FF5733; font-weight: bold;">Ouvert à d\'autres langages !</span>',
       ],
       typeSpeed: 50,
