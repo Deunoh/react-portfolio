@@ -224,7 +224,7 @@ const skillsData = {
       <svg
         viewBox="0 0 256 254"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         width="256"
         height="254"
         preserveAspectRatio="xMidYMid"
