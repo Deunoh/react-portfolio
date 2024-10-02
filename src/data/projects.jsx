@@ -35,6 +35,37 @@ export default [
   },
   {
     id: 2,
+    anchor: 'datashot',
+    title: 'DataShot',
+    link: 'https://data-shot.fr/',
+    github: 'https://github.com/Deunoh/datashot',
+    image: 'assets/datashot-portfolio.gif',
+    alt: 'video datashot',
+    description:
+      'Petit projet permettant de lire les <strong class="strong_presentation">métadonnées</strong> utiles (EXIF) d\'une photo, comme la vitesse, le matériel utilisé, le lieu où a été prise la photo... Très pratique dans le monde de la <strong class="strong_presentation">photographie</strong> ! Ce projet est encore en cours de développement, une prochaine version permettra de partager l\'image sans compression et toujours avec l\'affichage des métadonnées. Ce site sera utilisé dans un plus gros projet tournant autour de l\'apprentissage de la photographie.',
+    technos: ['react'],
+    summary: "Lire les métadonnées d'une photographie !",
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+        <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+      </svg>
+    ),
+  },
+  {
+    id: 3,
     anchor: 'promoliegeois',
     title: 'Promoliegeois',
     link: 'https://promoliegeois.net/',
@@ -64,7 +95,7 @@ export default [
     ),
   },
   {
-    id: 3,
+    id: 4,
     anchor: 'firstportfolio',
     title: 'Premier portfolio',
     link: 'https://denovann.tech/',
@@ -97,7 +128,7 @@ export default [
     ),
   },
   {
-    id: 4,
+    id: 5,
     anchor: 'insulte',
     title: "Ne m'insulte pas",
     github: 'https://github.com/Deunoh/ne_m-insulte_pas',
@@ -133,7 +164,7 @@ export default [
   },
 
   {
-    id: 5,
+    id: 6,
     anchor: 'calculator',
     title: ' JS Calculator',
     link: 'https://deunoh.github.io/calculator-JS/',
@@ -166,38 +197,6 @@ export default [
         <path d="M8 17l0 .01" />
         <path d="M12 17l0 .01" />
         <path d="M16 17l0 .01" />
-      </svg>
-    ),
-  },
-
-  {
-    id: 6,
-    anchor: 'upload',
-    title: 'High Fidelity Snap',
-    github: 'https://github.com/Deunoh/HighFidelitySnap',
-    image: 'assets/logo-highfidelitysnap.png',
-    alt: 'image highfidelitysnap',
-    description:
-      'Projet en cours de développement, le nom du projet est temporaire',
-    technos: ['react', 'symfony'],
-    summary: 'Projet en cours',
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="icon icon-tabler icons-tabler-outline icon-tabler-cloud-upload"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
-        <path d="M9 15l3 -3l3 3" />
-        <path d="M12 12l0 9" />
       </svg>
     ),
   },

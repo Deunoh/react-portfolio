@@ -158,11 +158,12 @@
   display: none;
   padding: 0.5rem;
   width: 100%;
-  max-width: 600px;
+  //max-width: 800px;
   border: 1px solid v.$gray-border;
   z-index: 99;
   animation: fadeIn 0.2s ease-in-out;
   background-color: v.$secondary;
+  overflow: hidden;
 }
 
 .list-items-with-description {
