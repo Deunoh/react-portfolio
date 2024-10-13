@@ -108,6 +108,7 @@ const Home = ({ isScrolled }) => {
             download
             href="assets/CV_Denovann_Belloir.pdf"
             className="btn-link"
+            id="cv-btn"
           >
             Télécharger mon CV
           </a>
