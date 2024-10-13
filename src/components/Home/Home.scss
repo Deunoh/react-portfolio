@@ -42,7 +42,7 @@
         font-weight: 600;
         line-height: 38px;
         border-radius: 20px;
-        font-size: 1em;
+        font-size: 0.9em;
         border: 1px solid transparent;
         text-align: center;
         transition: background-color 0.3 ease;
@@ -141,5 +141,14 @@
     .dotlottie-animation--scroll {
       bottom: 0.5rem;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-link {
+    font-size: 0.8em;
+  }
+  .home-content--btns {
+    justify-content: center;
   }
 }
