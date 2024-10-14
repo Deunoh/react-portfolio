@@ -106,7 +106,7 @@ const Home = ({ isScrolled }) => {
         <div className="home-content--btns" ref={btnsRef}>
           <a
             download
-            href="assets/CV_Denovann_Belloir.pdf"
+            href="assets/CV-Denovann_Belloir.pdf"
             className="btn-link"
             id="cv-btn"
           >
