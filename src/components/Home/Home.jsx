@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
 import './Home.scss';
 import Typed from 'typed.js';
-import profil from '../../assets/profil3.jpeg';
+import profil from '../../assets/profil.webp';
 
 const Home = ({ isScrolled }) => {
   const el = useRef(null);
