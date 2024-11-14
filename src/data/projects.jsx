@@ -1,6 +1,40 @@
 export default [
   {
     id: 1,
+    anchor: 'favospace',
+    title: 'Favospace',
+    link: 'https://favospace.fr/',
+    github: 'https://github.com/Deunoh?tab=repositories&q=favospace',
+    image: 'assets/favospace.png',
+    alt: 'image favospace',
+    description:
+      "Projet fullstack de <strong class='strong_presentation'>gestion de favoris web</strong> permettant aux utilisateurs de créer des espaces thématiques pour sauvegarder leurs liens importants. La fonctionnalité de <strong class='strong_presentation'>partage d'espace</strong> via un lien unique permet aux autres utilisateurs de cloner instantanément une collection complète de favoris. Cela permet par exemple de transmettre rapidement ses liens de réseaux sociaux ou encore une liste de liens pour un futur voyage en groupe. L'interface, inspirée des codes visuels des smartphones, offre une <strong class='strong_presentation'>expérience utilisateur</strong> intuitive et familière.",
+    technos: ['react', 'redux', 'symfony', 'scss'],
+    summary: 'Gérez vos favoris web',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="icon icon-tabler icons-tabler-outline icon-tabler-world"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+        <path d="M3.6 9h16.8" />
+        <path d="M3.6 15h16.8" />
+        <path d="M11.5 3a17 17 0 0 0 0 18" />
+        <path d="M12.5 3a17 17 0 0 1 0 18" />
+      </svg>
+    ),
+  },
+  {
+    id: 2,
     anchor: 'apocalypse',
     title: "Apo'calypse",
     link: 'https://apocalypse.denovann.fr/',
@@ -34,7 +68,7 @@ export default [
     ),
   },
   {
-    id: 2,
+    id: 3,
     anchor: 'datashot',
     title: 'DataShot',
     link: 'https://data-shot.fr/',
@@ -65,7 +99,7 @@ export default [
     ),
   },
   {
-    id: 3,
+    id: 4,
     anchor: 'promoliegeois',
     title: 'Promoliegeois',
     link: 'https://promoliegeois.net/',
@@ -95,7 +129,7 @@ export default [
     ),
   },
   {
-    id: 4,
+    id: 5,
     anchor: 'firstportfolio',
     title: 'Premier portfolio',
     link: 'https://denovann.tech/',
@@ -128,7 +162,7 @@ export default [
     ),
   },
   {
-    id: 5,
+    id: 6,
     anchor: 'insulte',
     title: "Ne m'insulte pas",
     github: 'https://github.com/Deunoh/ne_m-insulte_pas',
@@ -164,7 +198,7 @@ export default [
   },
 
   {
-    id: 6,
+    id: 7,
     anchor: 'calculator',
     title: ' JS Calculator',
     link: 'https://deunoh.github.io/calculator-JS/',
@@ -201,7 +235,7 @@ export default [
     ),
   },
   {
-    id: 7,
+    id: 8,
     anchor: 'newportfolio',
     title: 'Nouveau portfolio',
     link: 'https://denovann.fr',
