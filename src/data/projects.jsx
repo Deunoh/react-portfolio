@@ -9,7 +9,7 @@ export default [
     alt: 'image favospace',
     description:
       "Projet fullstack de <strong class='strong_presentation'>gestion de favoris web</strong> permettant aux utilisateurs de créer des espaces thématiques pour sauvegarder leurs liens importants. La fonctionnalité de <strong class='strong_presentation'>partage d'espace</strong> via un lien unique permet aux autres utilisateurs de cloner instantanément une collection complète de favoris. Cela permet par exemple de transmettre rapidement ses liens de réseaux sociaux ou encore une liste de liens pour un futur voyage en groupe. L'interface, inspirée des codes visuels des smartphones, offre une <strong class='strong_presentation'>expérience utilisateur</strong> intuitive et familière.",
-    technos: ['react', 'redux', 'symfony', 'scss'],
+    technos: ['react', 'redux', 'symfony', 'mysql', 'sass'],
     summary: 'Gérez vos favoris web',
     svg: (
       <svg
@@ -43,7 +43,7 @@ export default [
     alt: 'image apocalypse',
     description:
       "Projet de fin de formation présenté devant un jury en vue de l’obtention du titre professionnel DWWM. Nous disposions <strong class='strong_presentation'>d’un mois</strong> pour réaliser ce projet en <strong class='strong_presentation'>équipe</strong>, depuis la conception jusqu’à la mise en ligne. Nous avons adopté la méthodologie <strong class='strong_presentation'>Agile Scrum</strong> pour respecter les délais. Ce site collaboratif, destiné aux survivants d'une apocalypse zombie, aide la population à survivre grâce à une carte interactive, des articles, et des avis de recherche pour retrouver les disparus. Le contenu est modéré et géré via un <strong class='strong_presentation'>back office</strong> par les administrateurs. Ce projet m’a permis de travailler en <strong class='strong_presentation'>conditions réelles</strong> et d’approfondir mes compétences en équipe.",
-    technos: ['react', 'redux', 'symfony', 'scss'],
+    technos: ['react', 'redux', 'symfony', 'mysql', 'sass'],
     summary: 'Projet realisé en équipe',
     svg: (
       <svg
