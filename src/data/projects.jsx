@@ -107,7 +107,7 @@ export default [
     image: 'assets/promoliegeois.png',
     alt: 'projet promoliegeois',
     description:
-      "Mon <strong class=\"strong_presentation\">premier site</strong> ! Realisé peu avant le début de ma formation, ce site à pour but de regrouper tous les liens nécessaires pour suivre la formation développeur web et web mobile au sein de l'école O'clock. Il y a possibilité de changer le fond décran grâce à l'<strong class=\"strong_presentation\">API</strong> d'unsplash puis le sauvegardé pour la prochaine visite avec le petit appareil photo. En bref ce site m'a permis de mettre en pratique mes petites connaissances en html css et javascript appris en autodidacte.",
+      "Mon <strong class=\"strong_presentation\">premier site</strong> ! Réalisé peu avant le début de ma formation, ce site a pour but de regrouper tous les liens nécessaires pour suivre la formation développeur web et web mobile au sein de l'école O'clock. Il y a possibilité de changer le fond d'écran grâce à l'<strong class=\"strong_presentation\">API</strong> d'unsplash puis de le sauvegarder pour la prochaine visite avec le petit appareil photo. En bref, ce site m'a permis de mettre en pratique mes petites connaissances en HTML, CSS et JavaScript apprises en autodidacte.",
     technos: ['html', 'jquery', 'php'],
     summary: 'Mon premier site !',
     svg: (
@@ -137,7 +137,7 @@ export default [
     image: 'assets/portfolio.png',
     alt: 'image portfolio',
     description:
-      'Ce portfolio à été réalisé en <strong class="strong_presentation">début de formation</strong>, la conception du site en défilement <strong class="strong_presentation">latéral</strong> est un défi que je me suis lancé, que ce soit au niveau du code mais aussi sur la conception de la maquette. Développé en \'desktop first\', une version mobile arrive prochainement. Le code de ce portfolio est loin de mes capacités actuelles mais il mà permis de progresser !',
+      'Ce portfolio a été réalisé en <strong class="strong_presentation">début de formation</strong>, la conception du site en défilement <strong class="strong_presentation">latéral</strong> est un défi que je me suis lancé, que ce soit au niveau du code mais aussi sur la conception de la maquette. Développé en \'desktop first\', une version mobile arrive prochainement. Le code de ce portfolio est loin de mes capacités actuelles mais il m\'a permis de progresser !',
     technos: ['html', 'javascript', 'php'],
     summary: 'Mon premier portfolio',
     svg: (
@@ -206,7 +206,7 @@ export default [
     image: 'assets/calculator-screen.png',
     alt: 'image calculator',
     description:
-      "Défi que je me suis lancé de créer une calculatrice en JavaScript en 45mn. Je me suis inspiré de la calculatrice d'ios",
+      "Défi que je me suis lancé de créer une calculatrice en JavaScript en 45 min. Je me suis inspiré de la calculatrice d'iOS",
     technos: ['javascript'],
     summary: "Calculatrice créer en 45mn inspiré d'iOS",
     svg: (
