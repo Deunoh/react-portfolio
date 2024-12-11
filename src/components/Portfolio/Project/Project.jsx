@@ -11,6 +11,7 @@ const Project = ({
   link,
   github,
   image,
+  video,
   alt,
   description,
   technos,
@@ -35,7 +36,11 @@ const Project = ({
   return (
     <div className="project-card-container" id={anchor} ref={projectRef}>
       <div className="project-card-substance">
-        <img src={image} alt={alt} />
+        {video ? (
+          <video src={video} alt={alt} controls />
+        ) : (
+          <img src={image} alt={alt} />
+        )}
         <SkillsList skills={technos} />
       </div>
       <div className="project-card-form">
@@ -78,7 +83,8 @@ Project.propTypes = {
   anchor: PropTypes.string.isRequired,
   link: PropTypes.string,
   github: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  video: PropTypes.string,
   alt: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technos: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -86,6 +92,8 @@ Project.propTypes = {
 
 Project.defaultProps = {
   link: null,
+  image: null,
+  video: null,
 };
 
 export default Project;

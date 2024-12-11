@@ -8,7 +8,7 @@ export default [
     image: 'assets/favospace.png',
     alt: 'image favospace',
     description:
-      "Projet fullstack de <strong class='strong_presentation'>gestion de favoris web</strong> permettant aux utilisateurs de créer des espaces thématiques pour sauvegarder leurs liens importants. La fonctionnalité de <strong class='strong_presentation'>partage d'espace</strong> via un lien unique permet aux autres utilisateurs de cloner instantanément une collection complète de favoris. Cela permet par exemple de transmettre rapidement ses liens de réseaux sociaux ou encore une liste de liens pour un futur voyage en groupe. L'interface, inspirée des codes visuels des smartphones, offre une <strong class='strong_presentation'>expérience utilisateur</strong> intuitive et familière.",
+      "Projet personnel fullstack de <strong class='strong_presentation'>gestion de favoris web</strong> permettant aux utilisateurs de créer des espaces thématiques pour sauvegarder leurs liens importants. La fonctionnalité de <strong class='strong_presentation'>partage d'espace</strong> via un lien unique permet aux autres utilisateurs de cloner instantanément une collection complète de favoris. Cela permet par exemple de transmettre rapidement ses liens de réseaux sociaux ou encore une liste de liens pour un futur voyage en groupe. L'interface, inspirée des codes visuels des smartphones, offre une <strong class='strong_presentation'>expérience utilisateur</strong> intuitive et familière.",
     technos: ['react', 'redux', 'symfony', 'mysql', 'sass'],
     summary: 'Gérez vos favoris web',
     svg: (
@@ -102,12 +102,11 @@ export default [
     id: 4,
     anchor: 'promoliegeois',
     title: 'Promoliegeois',
-    link: 'https://promoliegeois.net/',
     github: 'https://github.com/Deunoh/homepage-liegeois',
     image: 'assets/promoliegeois.png',
     alt: 'projet promoliegeois',
     description:
-      "Mon <strong class=\"strong_presentation\">premier site</strong> ! Réalisé peu avant le début de ma formation, ce site a pour but de regrouper tous les liens nécessaires pour suivre la formation développeur web et web mobile au sein de l'école O'clock. Il y a possibilité de changer le fond d'écran grâce à l'<strong class=\"strong_presentation\">API</strong> d'unsplash puis de le sauvegarder pour la prochaine visite avec le petit appareil photo. En bref, ce site m'a permis de mettre en pratique mes petites connaissances en HTML, CSS et JavaScript apprises en autodidacte.",
+      "Mon <strong class=\"strong_presentation\">premier site</strong> ! Réalisé peu avant le début de ma formation, ce site a pour but de regrouper tous les liens nécessaires pour suivre la formation développeur web et web mobile au sein de l'école O'clock. Il y a possibilité de changer le fond d'écran grâce à l'<strong class=\"strong_presentation\">API</strong> d'unsplash puis de le sauvegarder pour la prochaine visite avec le petit appareil photo. En bref, ce site m'a permis de mettre en pratique mes petites connaissances en HTML, CSS et JavaScript apprises en autodidacte. Le site n'est plus en ligne à ce jour.",
     technos: ['html', 'jquery', 'php'],
     summary: 'Mon premier site !',
     svg: (
@@ -132,12 +131,12 @@ export default [
     id: 5,
     anchor: 'firstportfolio',
     title: 'Premier portfolio',
-    link: 'https://denovann.tech/',
     github: 'https://github.com/Deunoh/portfolio',
-    image: 'assets/portfolio.png',
+    // image: 'assets/portfolio.png',
+    video: 'assets/first-portfolio.mp4',
     alt: 'image portfolio',
     description:
-      'Ce portfolio a été réalisé en <strong class="strong_presentation">début de formation</strong>, la conception du site en défilement <strong class="strong_presentation">latéral</strong> est un défi que je me suis lancé, que ce soit au niveau du code mais aussi sur la conception de la maquette. Développé en \'desktop first\', une version mobile arrive prochainement. Le code de ce portfolio est loin de mes capacités actuelles mais il m\'a permis de progresser !',
+      'Ce portfolio a été réalisé en <strong class="strong_presentation">début de formation</strong>, la conception du site en défilement <strong class="strong_presentation">latéral</strong> est un défi que je me suis lancé, que ce soit au niveau du code mais aussi sur la conception de la maquette. Développé en \'desktop first\', une version mobile arrive prochainement. Le code de ce portfolio est loin de mes capacités actuelles mais il m\'a permis de progresser ! Le site n\'est plus en ligne à ce jour.',
     technos: ['html', 'javascript', 'php'],
     summary: 'Mon premier portfolio',
     svg: (
@@ -165,11 +164,12 @@ export default [
     id: 6,
     anchor: 'insulte',
     title: "Ne m'insulte pas",
+    link: 'https://ne_m-insulte_pas.surge.sh/',
     github: 'https://github.com/Deunoh/ne_m-insulte_pas',
     image: 'assets/ne_m-insulte_pas.png',
     alt: "projet React Ne m'insulte pas",
     description:
-      'Mini projet codé en 1 journée me permettant de comprendre et mettre en oeuvre les champs contrôlés en React.',
+      'Mini projet codé en 1 journée me permettant de comprendre et mettre en oeuvre les champs contrôlés en React. Pas de version mobile disponible.',
     technos: ['react'],
     summary: 'Petit projet pour apprendre React',
     svg: (
