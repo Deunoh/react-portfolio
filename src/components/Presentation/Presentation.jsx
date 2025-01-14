@@ -61,9 +61,8 @@ const Presentation = () => {
             , que j&apos;ai ensuite présenté devant un jury. À l&apos;issue de
             cette présentation, j&apos;ai obtenu le titre professionnel de
             développeur web et web mobile. Je suis désormais à la recherche
-            d&apos;une alternance pour continuer mon apprentissage ou d&apos;une
-            offre d&apos;emploi me permettant de mettre rapidement mes nouvelles
-            compétences au service d&apos;une entreprise !
+            d&apos;une offre d&apos;emploi me permettant de mettre rapidement
+            mes nouvelles compétences au service d&apos;une entreprise !
           </p>
         </div>
         <div className="about_container-card future-elem" ref={futureRef}>
