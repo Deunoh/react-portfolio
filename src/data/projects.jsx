@@ -1,6 +1,39 @@
 export default [
   {
     id: 1,
+    anchor: 'Liovette',
+    title: 'Liovette Moto Club',
+    link: 'https://motoclub.denovann.fr/',
+    github: 'https://github.com/Deunoh/liovette_moto-club',
+    image: 'assets/liovettemoto.png',
+    alt: 'liovette moto club',
+    description:
+      "Projet personnel de création d'un thème WordPress pour un moto club. Ce projet m'a permis de découvrir le fonctionnement de <strong class='strong_presentation'>WordPress</strong>, de <strong class='strong_presentation'>créer un thème</strong> de A à Z, de le rendre responsive, et de le rendre administrable par le client. Le site est actuellement en <strong class='strong_presentation'>cours de développement</strong>. Le site en ligne est une version de démonstration.",
+    technos: ['wordpress', 'php', 'boostrap', 'css', 'javascript'],
+    summary: 'Thème WordPress pour un moto club',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="icon icon-tabler icons-tabler-outline icon-tabler-motorbike"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        <path d="M19 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+        <path d="M13 6h2l1.5 3l2 4" />
+      </svg>
+    ),
+  },
+  {
+    id: 2,
     anchor: 'favospace',
     title: 'Favospace',
     link: 'https://favospace.fr/',
@@ -34,7 +67,7 @@ export default [
     ),
   },
   {
-    id: 2,
+    id: 3,
     anchor: 'apocalypse',
     title: "Apo'calypse",
     link: 'https://apocalypse.denovann.fr/',
@@ -68,7 +101,7 @@ export default [
     ),
   },
   {
-    id: 3,
+    id: 4,
     anchor: 'datashot',
     title: 'DataShot',
     link: 'https://data-shot.fr/',
@@ -99,7 +132,7 @@ export default [
     ),
   },
   {
-    id: 4,
+    id: 5,
     anchor: 'promoliegeois',
     title: 'Promoliegeois',
     github: 'https://github.com/Deunoh/homepage-liegeois',
@@ -128,7 +161,7 @@ export default [
     ),
   },
   {
-    id: 5,
+    id: 6,
     anchor: 'firstportfolio',
     title: 'Premier portfolio',
     github: 'https://github.com/Deunoh/portfolio',
@@ -161,7 +194,7 @@ export default [
     ),
   },
   {
-    id: 6,
+    id: 7,
     anchor: 'insulte',
     title: "Ne m'insulte pas",
     link: 'https://ne_m-insulte_pas.surge.sh/',
@@ -198,7 +231,7 @@ export default [
   },
 
   {
-    id: 7,
+    id: 8,
     anchor: 'calculator',
     title: ' JS Calculator',
     link: 'https://deunoh.github.io/calculator-JS/',
@@ -235,7 +268,7 @@ export default [
     ),
   },
   {
-    id: 8,
+    id: 9,
     anchor: 'newportfolio',
     title: 'Nouveau portfolio',
     link: 'https://denovann.fr',
