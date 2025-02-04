@@ -9,7 +9,7 @@ export default [
     alt: 'liovette moto club',
     description:
       "Projet personnel de création d'un thème WordPress pour un moto club. Ce projet m'a permis de découvrir le fonctionnement de <strong class='strong_presentation'>WordPress</strong>, de <strong class='strong_presentation'>créer un thème</strong> de A à Z, de le rendre responsive, et de le rendre administrable par le client. Le site est actuellement en <strong class='strong_presentation'>cours de développement</strong>. Le site en ligne est une version de démonstration.",
-    technos: ['wordpress', 'php', 'boostrap', 'css', 'javascript'],
+    technos: ['wordpress', 'php', 'bootstrap', 'css', 'javascript'],
     summary: 'Thème WordPress pour un moto club',
     svg: (
       <svg
