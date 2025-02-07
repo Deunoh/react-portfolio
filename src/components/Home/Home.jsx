@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import './Home.scss';
 import Typed from 'typed.js';
 import profil from '../../assets/profil.webp';
+import cv from '../../assets/Denovann_CV.pdf';
 
 const Home = ({ isScrolled }) => {
   const el = useRef(null);
@@ -104,12 +105,7 @@ const Home = ({ isScrolled }) => {
           <span ref={el} />
         </p>
         <div className="home-content--btns" ref={btnsRef}>
-          <a
-            download
-            href="assets/CV-Denovann_Belloir.pdf"
-            className="btn-link"
-            id="cv-btn"
-          >
+          <a download href={cv} className="btn-link" id="cv-btn">
             Télécharger mon CV
           </a>
           <a href="#contact-section" className="btn-link">
