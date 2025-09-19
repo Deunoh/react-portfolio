@@ -1,6 +1,22 @@
 export default [
-  {
+    {
     id: 1,
+    anchor: 'Bookmarks',
+    title: 'Favospace Bookmarks',
+    link: 'https://chromewebstore.google.com/detail/okndjjoacflpnollkahklpbfohdijgoa?utm_source=item-share-cb',
+    github: 'https://github.com/Deunoh/favospace-mini',
+    image: 'assets/bookmarks.png',
+    alt: 'favospace bookmarks',
+    description:
+      "Extension Chrome permettant de <strong class='strong_presentation'>gérer ses favoris</strong> de manière simple et efficace dans une interface moderne et intuitive. Ce projet m'a permis de découvrir l'écosystème des <strong class='strong_presentation'>extensions Chrome</strong> et d'apprendre à interagir avec les <strong class='strong_presentation'>APIs natives du navigateur</strong>. L'extension offre une <strong class='strong_presentation'>expérience utilisateur fluide</strong> avec un design épuré, permettant d'accéder rapidement à ses sites favoris. Disponible sur le <strong class='strong_presentation'>Chrome Web Store</strong>, elle est en constante évolution avec des mises à jour régulières pour améliorer les fonctionnalités et l'expérience utilisateur.",
+    technos: ['javascript', 'css'],
+    summary: 'Gestion des favoris pour Chrome',
+    svg: (
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-chrome"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 9h8.4" /><path d="M14.598 13.5l-4.2 7.275" /><path d="M9.402 13.5l-4.2 -7.275" /></svg>
+    ),
+  },
+  {
+    id: 2,
     anchor: 'Liovette',
     title: 'Liovette Moto Club',
     link: 'https://motoclub.denovann.fr/',
@@ -33,7 +49,7 @@ export default [
     ),
   },
   {
-    id: 2,
+    id: 3,
     anchor: 'favospace',
     title: 'Favospace',
     link: 'https://favospace.fr/',
@@ -67,7 +83,7 @@ export default [
     ),
   },
   {
-    id: 3,
+    id: 4,
     anchor: 'apocalypse',
     title: "Apo'calypse",
     link: 'https://apocalypse.denovann.fr/',
@@ -101,7 +117,7 @@ export default [
     ),
   },
   {
-    id: 4,
+    id: 5,
     anchor: 'datashot',
     title: 'DataShot',
     link: 'https://data-shot.fr/',
@@ -132,7 +148,7 @@ export default [
     ),
   },
   {
-    id: 5,
+    id: 6,
     anchor: 'promoliegeois',
     title: 'Promoliegeois',
     github: 'https://github.com/Deunoh/homepage-liegeois',
@@ -161,7 +177,7 @@ export default [
     ),
   },
   {
-    id: 6,
+    id: 7,
     anchor: 'firstportfolio',
     title: 'Premier portfolio',
     github: 'https://github.com/Deunoh/portfolio',
@@ -194,7 +210,7 @@ export default [
     ),
   },
   {
-    id: 7,
+    id: 8,
     anchor: 'insulte',
     title: "Ne m'insulte pas",
     link: 'https://ne_m-insulte_pas.surge.sh/',
@@ -231,7 +247,7 @@ export default [
   },
 
   {
-    id: 8,
+    id: 9,
     anchor: 'calculator',
     title: ' JS Calculator',
     link: 'https://deunoh.github.io/calculator-JS/',
@@ -268,7 +284,7 @@ export default [
     ),
   },
   {
-    id: 9,
+    id: 10,
     anchor: 'newportfolio',
     title: 'Nouveau portfolio',
     link: 'https://denovann.fr',
